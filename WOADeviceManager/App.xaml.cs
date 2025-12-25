@@ -26,7 +26,7 @@ namespace WOADeviceManager
                 ExtendsContentIntoTitleBar = true,
                 Title = "WOA Device Manager"
             };
-
+            mainWindow.AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
             m_window_hwnd = WinRT.Interop.WindowNative.GetWindowHandle(mainWindow);
             MainWindowAW = AppWindow.GetFromWindowId(Win32Interop.GetWindowIdFromWindow(m_window_hwnd));
 
